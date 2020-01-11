@@ -1,4 +1,6 @@
 class RefillController < ApplicationController
+  before_action :authenticate_user!
+
   def index
   end
 

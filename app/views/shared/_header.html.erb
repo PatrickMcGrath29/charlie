@@ -1,0 +1,18 @@
+<header>
+  <div class='navbar'>
+    <div class="container">
+      <div class='navbar-content'>
+          <div class='navbuttons'>
+            <ul class='horizontal-list'>
+              <li><%= session_account_button %></li>
+            </ul>
+          </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<% if notice or alert %>
+  <p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
+<% end %>
