@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class RefillControllerTest < ActionDispatch::IntegrationTest
+class RefillsControllerTest < ActionDispatch::IntegrationTest
   # test "the truth" do
   #   assert true
   # end

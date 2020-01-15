@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   devise_for :users
-  resources :refill, only: [:index, :create]
+  resources :refills
+
   root "home#index"
 end

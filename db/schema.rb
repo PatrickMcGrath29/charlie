@@ -10,7 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_01_11_005305) do
+ActiveRecord::Schema.define(version: 2020_01_15_192649) do
+
+  create_table "refills", force: :cascade do |t|
+    t.string "security_code"
+    t.integer "refill_amount"
+    t.string "charlie_card_number"
+    t.boolean "use_default_charlie_card"
+    t.integer "user_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["user_id"], name: "index_refills_on_user_id"
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false

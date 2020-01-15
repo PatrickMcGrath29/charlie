@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  security_code: MyString
+  refill_amount: 1
+  charlie_card_number: MyString
+  use_default_charlie_card: 
+
+two:
+  security_code: MyString
+  refill_amount: 1
+  charlie_card_number: MyString
+  use_default_charlie_card: 
