@@ -1,12 +1,22 @@
 <div>
   <h1> Refill Charlie Card </h1>
   <%= form_with model: @refill, class: "refill-form" do |f| %>
-    <%= f.text_field :security_code %>
-    <%= f.check_box :use_default_charlie_card %>
-    <%= f.select :refill_amount do %>
-      <%= options_for_select @refill.default_refill_amounts %>
-    <% end %>
-
-    <%= f.submit "Refill" %>
+    <div class="field">
+      <%= f.label :security_code %><br />
+      <%= f.text_field :security_code %>
+    </div>
+    <div class="field">
+      <%= f.label :use_default_charlie_card %><br />
+      <%= f.check_box :use_default_charlie_card %>
+    </div>
+    <div class="field">
+      <%= f.label :refill_amount %><br />
+      <%= f.select :refill_amount do %>
+        <%= options_for_select @refill.default_refill_amounts %>
+      <% end %>
+    </div>
+    <div class="field">
+      <%= f.submit "Refill" %>
+    </div>
   <% end %>
 </div>

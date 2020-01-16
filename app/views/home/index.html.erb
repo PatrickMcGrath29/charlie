@@ -1,3 +1,13 @@
 <div>
   Welcome!
 </div>
+<div class="nav-link-group">
+  <div class="nav-link">
+    <%= link_to "New Refil", new_refill_path %>
+  </div>
+  <div class="nav-link">
+    <% if user_signed_in? %>
+      <%= link_to "Edit Account", edit_user_registration_path %>
+    <% end %>
+  </div>
+</div>

@@ -9,6 +9,11 @@
   </div>
 
   <div class="field">
+    <%= f.label :charlie_card_password %><br />
+    <%= f.password_field :charlie_card_password %>
+  </div>
+
+  <div class="field">
     <%= f.label :password %>
     <% if @minimum_password_length %>
     <em>(<%= @minimum_password_length %> characters minimum)</em>
